@@ -1,0 +1,97 @@
+2016-08-23 14:43:41 [10.18.120.226][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.18.120.226
+    in /home/fengshanshan/www/session_tracker/views/layouts/main.php:75
+    in /home/fengshanshan/www/session_tracker/controllers/SiteController.php:63
+2016-08-23 14:43:41 [10.18.120.226][-][-][info][application] $_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/fengshanshan/www/session_tracker/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/fengshanshan/www/session_tracker/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.3'
+    'REMOTE_ADDR' => '10.18.120.226'
+    'REMOTE_PORT' => '50256'
+    'SERVER_ADDR' => '10.209.16.153'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'fss.session_tracker.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'fss.session_tracker.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://fss.session_tracker.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471963421.0787
+    'REQUEST_TIME' => 1471963421
+]
+2016-08-23 14:52:27 [10.18.120.226][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/fengshanshan/www/session_tracker/views/data/index.php' in /home/fengshanshan/www/session_tracker/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/fengshanshan/www/session_tracker/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/fengshans...', Array, Object(app\controllers\DataController))
+#1 /home/fengshanshan/www/session_tracker/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\DataController))
+#2 /home/fengshanshan/www/session_tracker/controllers/DataController.php(64): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\DataController->actionIndex()
+#4 /home/fengshanshan/www/session_tracker/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/fengshanshan/www/session_tracker/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/fengshanshan/www/session_tracker/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/fengshanshan/www/session_tracker/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('data', Array)
+#8 /home/fengshanshan/www/session_tracker/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/fengshanshan/www/session_tracker/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2016-08-23 14:52:27 [10.18.120.226][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.18.120.226
+2016-08-23 14:52:27 [10.18.120.226][-][-][info][application] $_GET = [
+    'r' => 'data'
+]
+
+$_COOKIE = [
+    '_csrf' => '54367b386eed0c777b7f00538b55ba33202694a915dfe5ee746c13126e4daca5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ya2Xg0ouNpKdS3f33D8Kn8_fH-YALHzn\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/home/fengshanshan/www/session_tracker/web/index.php'
+    'QUERY_STRING' => 'r=data'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=data'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/home/fengshanshan/www/session_tracker/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.3'
+    'REMOTE_ADDR' => '10.18.120.226'
+    'REMOTE_PORT' => '50342'
+    'SERVER_ADDR' => '10.209.16.153'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'fss.session_tracker.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'fss.session_tracker.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=54367b386eed0c777b7f00538b55ba33202694a915dfe5ee746c13126e4daca5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ya2Xg0ouNpKdS3f33D8Kn8_fH-YALHzn%22%3B%7D'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471963947.3981
+    'REQUEST_TIME' => 1471963947
+]
